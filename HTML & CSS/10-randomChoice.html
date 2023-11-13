@@ -59,7 +59,6 @@
 
         <div class="tags" id="collection">
             <!-- <span class="tag">sandip</span> -->
-
         </div>
     </div>
     <script>
@@ -70,6 +69,7 @@
             console.log(event);
             if (event.key == ",") {
                 createTag(text);
+                text = "";
             } else {
                 text += event.key;
             }
