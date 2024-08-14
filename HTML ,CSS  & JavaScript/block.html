@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .main {
+            background: linear-gradient(111deg, #959595 39%, #2a352e 39%);
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-content: center;
+            justify-content: space-evenly;
+            align-items: center;
+            max-height: fit-content;
+            height: 500px;
+        }
+
+        .main>div {
+            width: 25%;
+            text-align: center;
+            background-color: #9595958b;
+            padding: 10px;
+        }
+
+        /* media for mobile screen */
+        @media only screen and (max-width: 640px) {
+            .main {
+                background: #959595;
+                flex-direction: column;
+            }
+
+            .main>div {
+                width: 90%;
+                background-color: #9595958b;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="div1">
+            <h1>Custtomer Review</h1>
+        </div>
+        <div class="div2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorem dolorum animi
+            assumenda minima recusandae provident fuga sed eveniet, vero illo! Rem consectetur optio laboriosam
+            molestias porro magni earum sapiente!</div>
+        <div class="div3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam mollitia non sunt? Quas
+            reiciendis id quos sed, temporibus repellat dicta possimus natus voluptatum a porro, placeat optio fuga
+            asperiores excepturi.</div>
+    </div>
+</body>
+
+</html>
